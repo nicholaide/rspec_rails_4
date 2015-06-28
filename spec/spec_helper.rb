@@ -11,6 +11,7 @@ Spork.prefork do
     config.use_transactional_fixtures = false
     config.infer_base_class_for_anonymous_controllers = false
     config.order = "random"
+    config.filter_run focus: true
 
     config.before :each do
       if Capybara.current_driver == :selenium
@@ -27,6 +28,7 @@ Spork.prefork do
 
     # Include Factory Girl syntax to simplify calls to factories
     config.include FactoryGirl::Syntax::Methods
+    
   end
 end
 
