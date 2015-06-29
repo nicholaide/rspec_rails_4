@@ -18,7 +18,7 @@
         <td><%= news_release.title %></td>
         <td><%= news_release.released_on %></td>
         <td><%= news_release.body %></td>
-        <td><%= link_to "#{news_release.released_on.strftime('%Y-%m-%d')}: #{news_release.title}", news_release %></td>
+        <td><%= link_to news_release.title_with_date, news_release %></td>
         <td><%= link_to 'Edit', edit_news_release_path(news_release) %></td>
         <td><%= link_to 'Destroy', news_release, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
