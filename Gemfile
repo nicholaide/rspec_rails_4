@@ -47,7 +47,7 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 group :development do
   gem 'guard-rspec', '~> 3.0.2'
   gem 'guard-spork', '~> 1.5.1'
-  gem 'spork-rails', github: 'sporkrb/spork-rails'
+  gem 'spork-rails', :git=> 'https://github.com/sporkrb/spork-rails.git'
   gem 'rb-fsevent', '~> 0.9.3'
 end
 
